@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4caf50;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4caf50;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Confirmation Successful</h1>
+        <p>Hello {{ name }},</p>
+        <p>Your email address has been successfully confirmed. You can now access all features of our application.</p>
+        <a href="{{ url_for('index') }}" class="btn">Go to Homepage</a>
+        <div class="footer">
+            <p>If you have any questions, feel free to <a href="mailto:support@example.com">contact us</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
